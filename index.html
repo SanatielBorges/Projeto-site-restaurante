@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Restaurante</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0">Meu Restaurante</h1>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-restaurante" class="nav-link">Sobre o restaurante</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">Eventos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link ">Nosso cardápio</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link ">Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-restaurante">
+            <!--AREA DO CARROSSEL-->
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="img/foto3.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/foto2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/confra.avif" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <!--AREA DO CARROSSEL-->
+
+            <!--AREA SOBRE O RESTAURANTE-->
+            <div class="pt-5 pb-5" id="bg-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5" id="alt-div-row">
+                            <img src="img/foto4.jpg" alt="" class="d-block w-100 h-100 rounded larg" id="alt-img">
+                        </div>
+                        <div class="col-md-7">
+                            <h2>Sobre <span>o restaurante</span></h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi excepturi cupiditate
+                                earum animi amet dolorum nihil pariatur magni, voluptatem ad consequuntur asperiores
+                                quia et. Ea neque sed voluptatem ab minima?</p>
+
+                            <h3>Sobre <span>o espaço</span></h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis laborum,
+                                itaque ea rem sequi enim labore aliquam voluptatum totam porro dolore nemo reiciendis
+                                deleniti blanditiis, aperiam doloribus ad eveniet?</p>
+                            <ul>
+                                <li>Item1</li>
+                                <li>Item2</li>
+                                <li>Item3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--AREA SOBRE O RESTAURANTE-->
+        </section>
+
+        <!--AREA EVENTOS-->
+        <section class="pt-5 pb-5" id="eventos">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center mb-5">Para todas <span> as ocasiões </span> </h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+
+                        <h3 class="fs-5">
+                            <img src="img/img-aniversario.jpg" class="d-block w-100 pb-2" alt="">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversários
+                        </h3>
+                        <p class="fw-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+                            nihil libero pariatur ullam aspernatur dolor perferendis at.</p>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <h3 class="fs-5">
+                            <img src="img/img-casamento.webp" class="d-block w-100 pb-2" alt="">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Casamentos
+                        </h3>
+                        <p class="fw-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nihil
+                            libero pariatur ullam aspernatur dolor perferendis at.</p>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <h3 class="fs-5">
+                            <img src="img/img-confra.jpg" class="d-block w-100 pb-2" alt="">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternizações
+                        </h3>
+                        <p class="fs- fw-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+                            nihil libero pariatur ullam aspernatur dolor perferendis at.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--AREA EVENTOS-->
+
+        <!--AREA CARDAPIOS-->
+
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row ">
+                    <h2 class="text-center mb-5">Nosso <span>cardápio</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" class="fw-bold text-start nav-link active" data-bs-toggle="tab"
+                                data-bs-target="#bebidas-sem-alcool">Bebidas não alcoolica</button>
+                            <button type="button" class="fw-bold text-start nav-link" data-bs-toggle="tab"
+                                data-bs-target="#bebidas-alcoolicas">Bebidas alcoolicas</button>
+                            <button type="button" class="fw-bold text-start nav-link" data-bs-toggle="tab"
+                                data-bs-target="#entradas">Entradas</button>
+                            <button type="button" class="fw-bold text-start nav-link" data-bs-toggle="tab"
+                                data-bs-target="#principais">Pratos principais</button>
+                            <button type="button" class="fw-bold text-start nav-link" data-bs-toggle="tab"
+                                data-bs-target="#sobremesas">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/sem-alcool/coca-cola.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Coca-cola</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/sem-alcool/coqutel.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Coquetel de frutas</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/sem-alcool/pink-lemonade.webp"
+                                            alt="">
+                                        <h6 class="fw-bold mt-2">Drinks com limões</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/sem-alcool/sucos.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Sucos naturais</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/alcoolicos/cervejas.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Cervejas</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/alcoolicos/runs.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Runs</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/alcoolicos/vinhos.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Vinhos</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/alcoolicos/whiskys.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">whiskys</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="entradas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/entradas/Bruschetta.webp" alt="">
+                                        <h6 class="fw-bold mt-2">Bruschetta</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/entradas/Carpaccio.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Carpaccio</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/entradas/Cogumelos-recheados.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Cogumelos recheados</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/entradas/Rolinhos-Primavera.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Rolinhos primavera</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/principais/file-mignon.webp" alt="">
+                                        <h6 class="fw-bold mt-2">File mignon</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/principais/penne-do-camarão.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Penne de camarão</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/principais/salmão-grelhado.webp" alt="">
+                                        <h6 class="fw-bold mt-2">Salmão grelhado</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/principais/Coq-Au-Vin.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Kuckin - Coq Au Vin</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/sobremesas/Mousse de Chocolate.webp" alt="">
+                                        <h6 class="fw-bold mt-2">Mousse de Chocolate</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/sobremesas/Profiteroles.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Profiteroles</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/sobremesas/Tarte Tatin.jpg" alt="">
+                                        <h6 class="fw-bold mt-2">Tarte Tatin</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block rounded w-100" src="img/sobremesas/Vanilla Crème Brûlée.avif" alt="">
+                                        <h6 class="fw-bold mt-2">Crème Brûlée</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--AREA CARDAPIOS-->
+
+        <!--AREA CONTATOS-->
+
+        <section class="pt-5 pb-5" id="fale-conosco">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Fale <span>conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mt-3">
+                                <label for="nome" class="form-label fw-bold">Seu nome</label>
+                                <input type="nome" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mt-3">
+                                <label for="email" class="form-label fw-bold">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mt-3">
+                                <label for="telefone" class="form-label fw-bold">Seu telefone</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mt-3">
+                                <label for="mensagem" class="form-label fw-bold">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-facebook fs-5"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-instagram fs-5 ms-2 me-2"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp fs-5"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua São José, nº 1554, Centro - Oeiras - PI
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--AREA CONTATOS-->
+
+        <!--AREA RODAPE-->
+
+        <div class="row" id="rodape">
+            <div class="col-12 text-center text-light">
+                <p class="mt-3">&copy CURSO EBAC -  Todos os direitos reservados 2023</p>
+            </div>
+        </div>
+
+        <!--AREA RODAPE-->
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+
+</html>
